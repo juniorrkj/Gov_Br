@@ -773,7 +773,13 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  background: rgba(59, 130, 246, 0.12);
+  background-color: #ffffff;
+  background-image: url("img/image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
 }
 
 .DataCardTitle {
