@@ -1,0 +1,1073 @@
+﻿/* Gov.br App Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  background: #f3f5fb;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  width: min(420px, 100%);
+  max-width: 420px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background: #f9f9ff;
+}
+
+.page-content {
+  padding: 84px 16px 112px;
+}
+
+.TopAppBar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 100%);
+  max-width: 420px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 16px;
+  background: #ffffff;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+  z-index: 20;
+}
+
+.topbar-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.brand-label {
+  color: #111827;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+.SearchSection,
+.SectionHighlights,
+.SectionServices,
+.InformationalBanner,
+.HeroSection,
+.InformationSection,
+.Security-Info,
+.Welcome-Section,
+.Data-Confirmation-Card,
+.Aside-Privacy-SideInfo {
+  margin-top: 32px;
+}
+
+.HighlightHeader,
+.SectionHighlights .Heading-2,
+.SectionServices .Heading-2 {
+  margin-bottom: 16px;
+}
+
+.SearchInput,
+.Search-Bar .Input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  padding: 0 16px;
+  background: #ffffff;
+  border: 1px solid #d1d5eb;
+  border-radius: 16px;
+  color: #64748b;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.SearchInput:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: #0f4cbb;
+}
+
+.SearchSection {
+  margin-bottom: 22px;
+}
+
+.search-icon {
+  color: #64748b;
+}
+
+.Heading-1 h1,
+.Heading-2 span,
+.Heading-3 span,
+.Heading-4 span,
+.Heading-5 span,
+.BankSubtitle span,
+.ServiceTitle,
+.ServiceSubtitle,
+.DataCardSubtitle span,
+.Label span {
+  margin: 0;
+}
+
+.Heading-1 h1,
+.Heading-2 span,
+.Heading-3 span,
+.Heading-4 span,
+.Heading-5 span {
+  font-weight: 700;
+}
+
+.Heading-1 h1 {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.Heading-2 span {
+  font-size: 18px;
+  color: #111827;
+}
+
+.Heading-3 span,
+.BankSubtitle span,
+.ServiceTitle {
+  font-size: 14px;
+}
+
+.Heading-4 span,
+.Heading-5 span {
+  font-size: 16px;
+}
+
+.HighlightsList {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.HighlightsList::-webkit-scrollbar {
+  display: none;
+}
+
+.BentoCard {
+  flex: 0 0 280px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 24px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.12);
+}
+
+.BentoCardBlue {
+  background: #1351b4;
+}
+
+.BentoCardYellow {
+  background: #ffcd07;
+  color: #111827;
+}
+
+.BentoCardGreen {
+  background: #00884a;
+}
+
+.CardIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 24px;
+}
+
+.CardText span,
+.BannerText p,
+.InformationText p,
+.SecurityDescription p,
+.HelpText p,
+.Helpsubtitle,
+.DataCardSubtitle span {
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.BentoCardBlue .CardText span {
+  color: #ffffff;
+}
+
+.Button.ViewAll {
+  padding: 0;
+  background: transparent;
+  color: #1d4ed8;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.Button.ViewAll:hover {
+  transform: translateY(-1px);
+}
+
+.Button.CardAction,
+.Button.CardActionSecondary,
+.Button.UpgradeButton,
+.NoAccountButton,
+.StartButton,
+.ConfirmButton,
+.ReadTerms {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.BentoCard .Button.CardAction,
+.BentoCard .Button.CardActionSecondary {
+  width: 100%;
+  min-height: 52px;
+}
+
+.Button.CardAction,
+.Button.UpgradeButton {
+  background: #ffffff;
+  color: #111827;
+}
+
+.Button.CardActionSecondary {
+  background: #1351b4;
+  color: #ffffff;
+}
+
+.Button.CardAction:hover,
+.Button.CardActionSecondary:hover,
+.Button.UpgradeButton:hover,
+.NoAccountButton:hover,
+.StartButton:hover,
+.ConfirmButton:hover,
+.ReadTerms:hover {
+  filter: brightness(0.98);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.Button.CardActionSecondary {
+  min-width: 120px;
+}
+
+.StartButton {
+  width: 100%;
+  background: #0f4cbb;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.UpgradeButton {
+  background: #ffffff;
+  color: #111827;
+}
+
+.SectionServices .ServicesGrid,
+.Banks-Grid-List,
+.Aside-Privacy-SideInfo {
+  display: grid;
+  gap: 12px;
+}
+
+.SectionServices .ServicesGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ServiceCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.ServiceCard:hover {
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.ServiceIcon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #eff3ff;
+  color: #1f2937;
+  font-size: 24px;
+}
+
+.ServiceText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ServiceSubtitle,
+.BankSubtitle span,
+.PrivacyText p,
+.HelpText p,
+.HelpSubtitle,
+.SecurityHeading span,
+.Label span {
+  color: #64748b;
+}
+
+.BankSubtitle span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.Banks-Grid-List {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.BankButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid #dae1ec;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.BankButton:hover {
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.BankLogo {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.BankLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.BankLogo.Yellow {
+  background: #ffcd07;
+}
+
+.BankLogo.Blue {
+  background: #1351b4;
+}
+
+.BankLogo.Red {
+  background: #cc092f;
+}
+
+.BankLogo.Orange {
+  background: #ec7000;
+}
+
+.BankLogo.Purple {
+  background: #8a05be;
+}
+
+.BankLogo.DarkRed {
+  background: #d2090f;
+}
+
+.BankInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.BankActionIcon {
+  font-size: 24px;
+  color: #64748b;
+}
+
+/* Bank Card Compact - Compact bank selection card with badges */
+.BankCardCompact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #dae1ec;
+  border-radius: 22px;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+  margin-bottom: 16px;
+}
+
+.BankCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.BankCardIcon {
+  font-size: 28px;
+  color: #0f4cbb;
+  flex-shrink: 0;
+}
+
+.BankCardHeader .Heading-3 {
+  margin: 0;
+}
+
+.BankCardText {
+  margin: 0;
+}
+
+.BankCardText p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.BankBadgesRow {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.BankBadgeSmall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 1;
+  padding: 6px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.BankBadgeSmall:hover {
+  border-color: #0f4cbb;
+  box-shadow: 0 8px 16px rgba(15, 76, 187, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.BankBadgeSmall img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.BankBadgeSmall.Yellow {
+  background: #fffbf0;
+}
+
+.BankBadgeSmall.Yellow img,
+.BankBadgeSmall.Yellow .BankBadgePlaceholder {
+  background: #ffcd07;
+}
+
+.BankBadgeSmall.Blue {
+  background: #f0f4ff;
+}
+
+.BankBadgeSmall.Blue img,
+.BankBadgeSmall.Blue .BankBadgePlaceholder {
+  background: #1351b4;
+}
+
+.BankBadgeSmall.Red {
+  background: #fff0f2;
+}
+
+.BankBadgeSmall.Red img,
+.BankBadgeSmall.Red .BankBadgePlaceholder {
+  background: #cc092f;
+}
+
+.BankBadgeSmall.DarkRed {
+  background: #fff0f1;
+}
+
+.BankBadgeSmall.DarkRed img,
+.BankBadgeSmall.DarkRed .BankBadgePlaceholder {
+  background: #d2090f;
+}
+
+.BankBadgeSmall.Orange {
+  background: #fff5f0;
+}
+
+.BankBadgeSmall.Orange img,
+.BankBadgeSmall.Orange .BankBadgePlaceholder {
+  background: #ec7000;
+}
+
+.BankBadgeSmall.Purple {
+  background: #faf5ff;
+}
+
+.BankBadgeSmall.Purple img,
+.BankBadgeSmall.Purple .BankBadgePlaceholder {
+  background: #8a05be;
+}
+
+.BankBadgePlaceholder {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 8px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding: 1px;
+}
+
+.BankBadgeSmall span {
+  font-size: 9px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.1;
+}
+
+.BankCardButton {
+  margin-top: 8px;
+}
+
+.Button.PrimaryButton,
+.OutrosButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 16px;
+  background: #0f4cbb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Button.PrimaryButton:hover,
+.OutrosButton:hover {
+  background: #0d3a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 76, 187, 0.2);
+}
+
+.Button.PrimaryButton:active,
+.OutrosButton:active {
+  transform: translateY(0);
+}
+
+.Security-Info {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 22px;
+  background: #f8fafc;
+  border-radius: 18px;
+}
+
+.SecurityIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #eef2ff;
+  color: #1d4ed8;
+  font-size: 24px;
+}
+
+.SecurityHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.SecurityHeading span,
+.Heading-2 span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.SecurityDescription p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.NoAccountButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 16px;
+  border: 1px solid #0f4cbb;
+  background: #0f4cbb;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.HeroSection,
+.InformationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.HeroSection h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.HeroTextList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.HeroText,
+.InformationText,
+.NavBreadcrumb,
+.Privacy-Shield-Card,
+.Help-Card,
+.Background-Border-Shadow {
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.HeroText,
+.InformationText,
+.Privacy-Shield-Card,
+.Help-Card {
+  padding: 18px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.HeroText p,
+.InformationText p,
+.PrivacyText p,
+.HelpText p {
+  margin: 0;
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.NavBreadcrumb {
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.Background-Border-Shadow {
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.06);
+}
+
+.Data-Confirmation-Card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.DataCardHeader {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.Overlay {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.DataCardTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.DataField {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.Label span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.FieldValue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.TextValue {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.CPFInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.CPFIcon {
+  position: absolute;
+  left: 12px;
+  font-size: 20px;
+  color: #64748b;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.CPFInput {
+  width: 100%;
+  min-height: 56px;
+  padding: 12px 16px;
+  padding-left: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  background-color: #ffffff;
+  border: 1px solid #d1d5eb;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.CPFInput:focus {
+  border-color: #0f4cbb;
+  box-shadow: 0 0 0 3px rgba(15, 76, 187, 0.1);
+}
+
+.FieldIcon,
+.PrivacyIcon,
+.HelpIcon,
+.LinkIcon,
+.BrandingImage {
+  font-size: 24px;
+  color: #1d4ed8;
+}
+
+.LevelStatus {
+  justify-content: space-between;
+}
+
+.Action-Panel {
+  position: relative;
+  padding: 24px;
+  border-radius: 20px;
+  background: #0f4cbb;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.ActionPanelOverlay {
+  display: none;
+}
+
+.ActionPanelContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ActionPanelText p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ConfirmButton {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 16px;
+  background: #ffcd07;
+  color: #111827;
+}
+
+.Aside-Privacy-SideInfo {
+  display: grid;
+  gap: 18px;
+}
+
+.Privacy-Shield-Card,
+.Help-Card {
+  padding: 20px;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.06);
+}
+
+.PrivacyHeader,
+.HelpCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ReadTerms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #1d4ed8;
+}
+
+.HelpFooter {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.HelpMark {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  margin-top: 6px;
+}
+
+.HelpDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.HelpTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.HelpSubtitle {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.Branding-Illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  border-radius: 20px;
+  background: #eef2ff;
+}
+
+.BrandingImage {
+  font-size: 44px;
+  color: #0f4cbb;
+}
+
+.BottomNavBar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 100%);
+  max-width: 420px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -4px 32px rgba(15, 23, 42, 0.06);
+  z-index: 20;
+}
+
+.NavLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex: 1;
+  padding: 10px 6px;
+  border-radius: 16px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.NavLink:hover {
+  color: #111827;
+  transform: translateY(-1px);
+}
+
+.NavLink.Active {
+  color: #111827;
+}
+
+.nav-icon {
+  font-size: 20px !important;
+}
+
+.Section-Instructional-Header,
+.InstructionText,
+.HeroTitle,
+.HeroTextList,
+.InformationText,
+.DataField,
+.WelcomeText,
+.Security-Info,
+.Privacy-Shield-Card,
+.Help-Card {
+  width: 100%;
+}
+
+.Section-Instructional-Header {
+  margin-bottom: 16px;
+}
+
+.InstructionText p,
+.InformationText p,
+.HeroText p,
+.SecurityDescription p,
+.HelpText p,
+.DataCardSubtitle span {
+  margin: 0;
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 16px 0;
+  }
+
+  .page-content {
+    padding: 84px 12px 132px;
+  }
+
+  .TopAppBar {
+    padding: 0 12px;
+  }
+
+  .SearchInput,
+  .Search-Bar .Input {
+    min-height: 52px;
+    padding: 0 14px;
+  }
+
+  .BentoCard {
+    min-width: 240px;
+  }
+
+  .ServiceCard {
+    min-height: 88px;
+  }
+
+  .BankButton {
+    padding: 16px;
+  }
+
+  .Security-Info {
+    padding: 18px;
+  }
+}

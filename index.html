@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gov.br</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0&display=swap" />
+  </head>
+  <body>
+    <div class="page-wrapper principal-page">
+      <header class="TopAppBar">
+        <a href="index.html" class="topbar-icon" aria-label="Menu">
+          <span class="material-symbols-rounded">menu</span>
+        </a>
+        <a href="index.html" class="brand-label">Gov.br</a>
+        <a href="principal.html" class="topbar-icon" aria-label="Perfil">
+          <span class="material-symbols-rounded">account_circle</span>
+        </a>
+      </header>
+
+      <main class="page-content">
+        <section class="Section-Instructional-Header">
+          <div class="Heading-1">
+            <h1>Acesse sua conta gov.br</h1>
+          </div>
+          <div class="InstructionText">
+            <p>Utilize sua conta bancária para uma autenticação imediata e segura. Nível Prata ou Ouro garantido.</p>
+          </div>
+        </section>
+
+        <section class="BankCardCompact">
+          <div class="BankCardHeader">
+            <span class="material-symbols-rounded BankCardIcon">account_balance</span>
+            <div class="Heading-3"><span>Entrar com seu banco</span></div>
+          </div>
+          <div class="BankCardText">
+            <p>Utilize sua conta bancária para uma autenticação imediata e segura. Nível Prata ou Ouro garantido.</p>
+          </div>
+          
+          <div class="BankBadgesRow">
+            <a href="confirmar.html" class="BankBadgeSmall Yellow" title="Banco do Brasil">
+              <img src="img/banco-do-brasil.png" alt="BB" />
+              <span>BB</span>
+            </a>
+            <a href="confirmar.html" class="BankBadgeSmall DarkRed" title="Santander">
+              <img src="img/santander.jpg" alt="Santander" />
+              <span>Santander</span>
+            </a>
+            <a href="confirmar.html" class="BankBadgeSmall Orange" title="Itaú">
+              <img src="img/itau.jpg" alt="Itaú" />
+              <span>Itaú</span>
+            </a>
+            <a href="confirmar.html" class="BankBadgeSmall Blue" title="Caixa">
+              <img src="img/caixa.jpg" alt="Caixa" />
+              <span>Caixa</span>
+            </a>
+          </div>
+
+          <button class="Button PrimaryButton BankCardButton OutrosButton">Entrar com outros bancos</button>
+        </section>
+        <section class="InformationSection">
+          <div class="Heading-2"><span>OU ACESSE COM CPF</span></div>
+          <div class="DataField">
+            <div class="Label"><span>CPF</span></div>
+            <div class="CPFInputWrapper">
+              <span class="material-symbols-rounded CPFIcon">person</span>
+              <input type="text" class="CPFInput" placeholder="000.000.000-00" value="000.000.000-00" readonly />
+            </div>
+          </div>
+          <a href="confirmar.html" class="NoAccountButton">Continuar</a>
+        </section>
+
+        <section class="InformationSection">
+          <div class="Heading-2"><span>Cadastro Instantâneo</span></div>
+          <div class="InformationText">
+            <p>Ao logar com seu banco, seu cadastro é validado automaticamente. Seus dados básicos serão autopreenchidos com segurança institucional.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="BottomNavBar">
+        <a href="index.html" class="NavLink Active">
+          <span class="material-symbols-rounded nav-icon">home</span>
+          <span>Início</span>
+        </a>
+        <a href="banco.html" class="NavLink">
+          <span class="material-symbols-rounded nav-icon">credit_card</span>
+          <span>Banco</span>
+        </a>
+        <a href="vacinação.html" class="NavLink">
+          <span class="material-symbols-rounded nav-icon">medical_services</span>
+          <span>Vacina</span>
+        </a>
+        <a href="confirmar.html" class="NavLink">
+          <span class="material-symbols-rounded nav-icon">person</span>
+          <span>Perfil</span>
+        </a>
+      </footer>
+    </div>
+
+    <script>
+      document.querySelector('.OutrosButton').addEventListener('click', function() {
+        window.location.href = 'banco.html';
+      });
+    </script>
+  </body>
+</html>

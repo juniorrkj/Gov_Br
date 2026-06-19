@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0&display=swap" />
+  </head>
+  <body>
+    <div class="page-wrapper confirmar-page">
+      <header class="TopAppBar">
+        <a href="banco.html" class="topbar-icon" aria-label="Voltar">
+          <span class="material-symbols-rounded">arrow_back</span>
+        </a>
+        <a href="principal.html" class="brand-label">Gov.br</a>
+        <a href="confirmar.html" class="topbar-icon" aria-label="Ajuda">
+          <span class="material-symbols-rounded">help_outline</span>
+        </a>
+      </header>
+
+      <main class="page-content confirmar-content">
+        <section class="Welcome-Section">
+          <div class="Heading-2">
+            <h2>Confirme seus dados</h2>
+          </div>
+          <div class="WelcomeText">
+            <p>
+              Importamos suas informações oficiais para agilizar seu cadastro
+              instantâneo.
+            </p>
+          </div>
+        </section>
+
+        <section class="Data-Confirmation-Card">
+          <div class="Background-Border-Shadow">
+            <div class="DataCardHeader">
+              <div class="Overlay" aria-hidden="true"></div>
+              <div class="DataCardTitle">
+                <div class="Heading-3">
+                  <span>Dados do Banco</span>
+                </div>
+                <div class="DataCardSubtitle">
+                  <span>Origem: Instituição Financeira Autorizada</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="DataField">
+              <div class="Label">
+                <span>NOME COMPLETO</span>
+              </div>
+              <div class="FieldValue">
+                <div class="TextValue">Carlos Silva dos Santos</div>
+                <span class="material-symbols-rounded FieldIcon">check_circle</span>
+              </div>
+            </div>
+
+            <div class="DataField">
+              <div class="Label">
+                <span>CPF</span>
+              </div>
+              <div class="FieldValue">
+                <div class="TextValue">***.456.***-**</div>
+                <span class="material-symbols-rounded FieldIcon">check_circle</span>
+              </div>
+            </div>
+
+            <div class="DataField">
+              <div class="Label">
+                <span>DATA DE NASCIMENTO</span>
+              </div>
+              <div class="FieldValue">
+                <div class="TextValue">12/05/1985</div>
+                <span class="material-symbols-rounded FieldIcon">check_circle</span>
+              </div>
+            </div>
+
+            <div class="DataField">
+              <div class="Label">
+                <span>NÍVEL DE CONTA</span>
+              </div>
+              <div class="FieldValue LevelStatus">
+                <span class="material-symbols-rounded FieldIcon">star</span>
+                <div class="TextValue">Prata (Gov.br)</div>
+              </div>
+            </div>
+
+            <div class="Action-Panel">
+              <div class="ActionPanelOverlay" aria-hidden="true"></div>
+              <div class="ActionPanelContent">
+                <div class="Heading-4">
+                  <span>Tudo certo?</span>
+                </div>
+                <div class="ActionPanelText">
+                  <p>
+                    Ao confirmar, sua conta será criada imediatamente.
+                  </p>
+                </div>
+              </div>
+
+              <button class="Button ConfirmButton" type="button" onclick="window.location.href='principal.html'">
+                Confirmar e Criar Conta
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="Aside-Privacy-SideInfo">
+          <div class="Privacy-Shield-Card">
+            <div class="PrivacyHeader">
+              <span class="material-symbols-rounded PrivacyIcon">shield</span>
+              <div class="Heading-5">
+                <span>Privacidade e Segurança</span>
+              </div>
+            </div>
+            <div class="PrivacyText">
+              <p>
+                Seus dados são protegidos pela Lei Geral de Proteção de Dados
+                (LGPD). A conexão com seu banco é utilizada exclusivamente para
+                validar sua identidade e elevar o nível de segurança da sua conta
+                Gov.br para Prata ou Ouro.
+              </p>
+            </div>
+            <a href="confirmar.html" class="Link ReadTerms">
+              <span>Ler termos de uso</span>
+              <span class="material-symbols-rounded LinkIcon">chevron_right</span>
+            </a>
+          </div>
+
+          <div class="Help-Card">
+            <div class="HelpCardHeader">
+              <span class="material-symbols-rounded HelpIcon">help_outline</span>
+              <div class="Heading-5">
+                <span>Dúvidas?</span>
+              </div>
+            </div>
+            <div class="HelpText">
+              <p>
+                Se algum dado estiver incorreto, procure sua agência bancária
+                para atualização cadastral.
+              </p>
+            </div>
+            <div class="HelpFooter">
+              <span class="HelpMark"></span>
+              <div class="HelpDetails">
+                <div class="HelpTitle">Por que via Banco?</div>
+                <div class="HelpSubtitle">
+                  É a forma mais segura de confirmar sua identidade digital sem
+                  sair de casa.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Branding-Illustration">
+            <span class="material-symbols-rounded BrandingImage">verified</span>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="BottomNavBar">
+        <a href="principal.html" class="NavLink">
+          <span class="material-symbols-rounded nav-icon">home</span>
+          <span>Início</span>
+        </a>
+        <a href="principal.html" class="NavLink">
+          <span class="material-symbols-rounded nav-icon">grid_view</span>
+          <span>Serviços</span>
+        </a>
+        <a href="principal.html" class="NavLink Active">
+          <span class="material-symbols-rounded nav-icon">person</span>
+          <span>Perfil</span>
+        </a>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        const btn = document.querySelector('.ConfirmButton');
+        if(btn){
+          if(btn.tagName === 'BUTTON'){
+            btn.addEventListener('click', function(){
+              window.location.href = 'principal.html';
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
